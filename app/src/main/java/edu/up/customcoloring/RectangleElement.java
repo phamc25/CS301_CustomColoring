@@ -24,7 +24,14 @@ public class RectangleElement extends DrawableElements{
     public void drawCanvas(Canvas canvas) {
         // Draws the rectangle
         canvas.drawRect(rectangle, paint);
+    }
 
+    // Returns a boolean if a touch corresponds to the rectangle
+    @Override
+    public boolean touchElement(int x, int y) {
+        // Rectangle with these boundaries
+        Rect rect = new Rect(this.rectangle.left, this.rectangle.top, this.rectangle.right, this.rectangle.bottom);
+        return rect.contains(x, y);
     }
 }
 

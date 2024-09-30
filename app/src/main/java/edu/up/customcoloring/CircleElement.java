@@ -31,6 +31,15 @@ public class CircleElement extends DrawableElements
     public void drawCanvas(Canvas canvas) {
         canvas.drawCircle(x, y, radius, paint);
     }
+
+    // Returns a boolean if a touch corresponds to the circle
+    @Override
+    public boolean touchElement(int xLoc, int yLoc) {
+        int circleX = xLoc - x;
+        int circleY = yLoc - y;
+        double pythDistance = Math.sqrt((circleX * circleX) + (circleY * circleY));
+        return pythDistance <= radius;
+    }
 }
 
 /**

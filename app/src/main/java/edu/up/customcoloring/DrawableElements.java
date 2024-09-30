@@ -15,6 +15,7 @@ public abstract class DrawableElements {
     // Instance variables
     protected Paint paint = new Paint();
     protected String elementName = "$NO NAME$";
+//    protected int ogColor;
 
     // Non-default Constructor
     public DrawableElements(String initName, int initColor) {
@@ -31,13 +32,21 @@ public abstract class DrawableElements {
         this.paint.setColor(color);
     }
 
-    public int getColor(int color) {
+    // Paint getter for changing
+    public int getColor() {
         return this.paint.getColor();
     }
 
-    // Abstract methods *Override in subclass drawings*
-    public abstract void drawCanvas(Canvas canvas);
+    // Name getter
+    public String getName() {
+        return this.elementName;
+    }
 
+    // Abstract methods *Override in subclass drawings*
+    // Draws
+    public abstract void drawCanvas(Canvas canvas);
+    // Returns a boolean if a touch corresponds to a shape
+    public abstract boolean touchElement(int x, int y);
 }
 
 /**

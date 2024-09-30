@@ -12,15 +12,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingLeft="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:text="Current Drawing Element:" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
     </LinearLayout>
 
     <LinearLayout
@@ -29,7 +38,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <edu.up.customcoloring.PictureSurfaceView
+        <edu.up.customcoloring.PictureView
             android:id="@+id/surfaceView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -38,6 +47,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <TextView
@@ -47,7 +57,8 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:paddingTop="5dp"
-            android:text="Red:" />
+            android:text="Red:"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/green_text_view"
@@ -65,7 +76,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:paddingTop="5dp"
-            android:text="Blue:" />
+            android:text="Blue" />
     </LinearLayout>
 
     <LinearLayout
