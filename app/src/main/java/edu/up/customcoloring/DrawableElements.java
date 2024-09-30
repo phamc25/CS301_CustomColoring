@@ -4,6 +4,7 @@ import android.graphics.Paint;
 
 /**
  *  @author: Chloe Pham
+ *  @date: September 29, 2024
  *  @description: This class defines the specifics of custom elements in the
  *  SurfaceView drawing. It is a base class for the other elements
  *

@@ -4,6 +4,7 @@ import android.graphics.Rect;
 
 /**
  *  @author: Chloe Pham
+ *  @date: September 29, 2024
  *  @description: This class defines the rectangle element
  *
  *  CS301 Programming Assignment

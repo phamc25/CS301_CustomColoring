@@ -6,6 +6,7 @@ import android.graphics.Region;
 
 /**
  *  @author: Chloe Pham
+ *  @date: September 29, 2024
  *  @description: This class defines the triangle element
  *
  *  CS301 Programming Assignment

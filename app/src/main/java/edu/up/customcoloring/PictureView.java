@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  *  @author: Chloe Pham
+ *  @date: September 29, 2024
  *  @description: This class calls the drawings on DrawableElements to
  *  to draw on the SurfaceView
  *

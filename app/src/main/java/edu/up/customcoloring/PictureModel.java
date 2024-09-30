@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  *  @author: Chloe Pham
+ *  @date: September 29, 2024
  *  @description: This class defines the model class
  *
  *  CS301 Programming Assignment

@@ -1,5 +1,14 @@
 package edu.up.customcoloring;
 
+/**
+ *  @author: Chloe Pham
+ *  @date: September 29, 2024
+ *  @description: This class is the Main Activity where views are being
+ *  registered with controllers
+ *
+ *  CS301 Programming Assignment
+ */
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.SeekBar;
