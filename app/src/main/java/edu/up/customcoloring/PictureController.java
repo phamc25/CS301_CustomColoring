@@ -68,9 +68,6 @@ public class PictureController implements View.OnTouchListener, SeekBar.OnSeekBa
                     if (chosenElement.getName().equals(picModel.currText)) {
                         latestElement = chosenElement;
                         int color = latestElement.getColor();
-                        int red = Color.red(color);
-                        int green = Color.green(color);
-                        int blue = Color.blue(color);
 
                         redSeek.setProgress(Color.red(color));
                         greenSeek.setProgress(Color.green(color));
